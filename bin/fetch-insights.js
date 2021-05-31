@@ -45,7 +45,7 @@ function storeData(data) {
     .catch(err => error('storeData error:', err));
 }
 
-fetch(`${insightsAPIUrl}${encodeURIComponent(testPageUrl2)}&key=${APIKey}`)
+fetch(`${insightsAPIUrl}${encodeURIComponent(testPageUrl)}&key=${APIKey}`)
   .then(res => res.json())
   .then(json => {
     sourceData = json;
