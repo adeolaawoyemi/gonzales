@@ -29,3 +29,10 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
+      env:
+        TEST_PAGE_URL: ${{ secrets.TEST_PAGE_URL }}
+        TEST_PAGE_URL2: ${{ secrets.TEST_PAGE_URL2 }}
+        INSIGHTS_API_URL: ${{ secrets.INSIGHTS_API_URL }}
+        GOOGLE_SHEETS_API_URL: ${{ secrets.GOOGLE_SHEETS_API_URL }}
+        API_KEY: ${{ secrets.API_KEY }}
+
