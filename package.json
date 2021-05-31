@@ -4,7 +4,7 @@
   "description": "script lib to fetch the Unified Player's Google PageSpeed Insights",
   "main": "index.js",
   "scripts": {
-    "test": "node bin/check-page-speed-insights.js"
+    "test": "node bin/fetch-insights.js"
   },
   "keywords": [],
   "author": "",
